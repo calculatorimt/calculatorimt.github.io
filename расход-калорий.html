@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Рассчитать потребление калорий - CalculatorIMT</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="css/imc.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/sendform.js" defer></script>
+  </head>
+  <body>
+ <header>
+  CalculatorIMT
+</header>
+<article class="calculator w3-container w3-content" style="max-width: 900px">
+  <section class="name w3-panel">
+    Рассчитать потребление калорий
+  </section>
+  <form id="calculator" class="w3-container w3-card w3-text-black w3-margin" action="https://calculator-imt.com/cgi/calorie_calculator.pl" method="GET" target="Popup" name="calculator" onsubmit="sendForm('800','800','calculator',''); return false;">
+
+
+  <section class="inputSection w3-panel">
+    <label>Ваш вес (кг):</label>
+    <div class="inputAround"><input class="input w3-mobile" id="weight" name="weight" type="text" placeholder="KG"></div>
+  </section>
+  <section class="inputSection w3-panel">
+    <label for="age">Ваш возраст (лет):</label>
+    <div class="inputAround">
+  <select class="w3-mobile select" id="activity" size="1" name="activity" aria-label="Activity">
+    <option value="легкая Работа" selected>легкая Работа</option>
+<option value="умеренная Работа">умеренная Работа</option>
+<option value="тяжелая Работа">тяжелая Работа</option>
+<option value="Аэробика">Аэробика</option>
+<option value="Бадминтон">Бадминтон</option>
+<option value="Баскетбол">Баскетбол</option>
+<option value="Альпинизм">Альпинизм</option>
+<option value="Бодибилдинг">Бодибилдинг</option>
+<option value="Футбол">Футбол</option>
+<option value="Гимнастика">Гимнастика</option>
+<option value="Бег">Бег</option>
+<option value="Спортивная Ходьба">Спортивная Ходьба</option>
+<option value="Велоспорт">Велоспорт</option>
+<option value="Гребля">Гребля</option>
+<option value="Плавание">Плавание</option>
+<option value="Парусный Cпорт">Парусный Cпорт</option>
+<option value="Лыжный Спорт">Лыжный Спорт</option>
+<option value="Сквош">Сквош</option>
+<option value="Танцы">Танцы</option>
+<option value="Теннис">Теннис</option>
+<option value="Волейбол">Волейбол</option>
+<option value="Автовождение">Автовождение</option>
+<option value="Глажение одежды">Глажение одежды</option>
+<option value="Смотреть ТВ">Смотреть ТВ</option>
+<option value="Колоть Дрова">Колоть Дрова</option>
+<option value="Готовить">Готовить</option>
+<option value="Лежать">Лежать</option>
+<option value="Уборка">Уборка</option>
+<option value="Стрижка Газона">Стрижка Газона</option>
+<option value="Секс">Секс</option>
+<option value="Подъем по лестнице">Подъем по лестнице</option>
+</select></div>
+</section>
+  <section class="buttonSection w3-panel">
+ <button class="w3-btn w3-dark-grey w3-round"  type="submit"> Рассчитать Калории</button></form>
+  </section>
+</article>
+<article class="about w3-content w3-panel" style="max-width: 900px">
+  <h4>Что такое потребление калорий?</h4>
+<div class="text">
+  Потребление калорий относится к общему количеству калорий, которые человек получает из еды и питья и которые организм использует для поддержания своей повседневной деятельности и функций организма. Калории — это единица измерения энергии, обеспечиваемой пищей, и они необходимы для правильного функционирования организма.
+</div>
+</article>
+<article class="calculators w3-panel w3-content" style="max-width: 900px;">
+<section class="name">
+  Другие калькуляторы
+</section>
+<section class="w3-container">
+  <div class="w3-panel w3-half">
+    <div class="w3-card">
+      <a href="имт.html"><img src="img/имт.webp" alt="" width="100%"></a>
+      <div class="text">
+      <a href="imт.html">Рассчитать ИМТ</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="w3-container">
+  <div class="w3-panel w3-half">
+    <div class="w3-card">
+      <a href="имт-ребенка.html"><img src="img/имт-ребенка.jpg.webp" alt="" width="100%"></a>
+      <div class="text">
+        <a href="имт-ребенка.html">Рассчитать ИМТ Детей и Подростков</a>
+      </div>
+    </div>
+  </div>
+  <div class="w3-panel w3-half">
+    <div class="w3-card">
+      <a href="идеальный-вес.html"><img src="img/идеальный-вес.jpg.webp" alt="" width="100%"></a>
+      <div class="text">
+        <a href="идеальный-вес.html">Рассчитать Идеальный Вес</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="w3-container">
+  <div class="w3-panel w3-half">
+    <div class="w3-card">
+      <a href="бсм.html"><img src="img/бсм.jpg.webp" alt="" width="100%"></a>
+      <div class="text">
+        <a href="бсм.html">Базальная Скорость Метаболизма</a>
+      </div>
+    </div>
+  </div>
+  <div class="w3-panel w3-half">
+    <div class="w3-card">
+      <a href="идеальный-вес-дети-и-подростки.html"><img src="img/идеальный-вес-дети-и-подростки.webp" alt="" width="100%"></a>
+      <div class="text">
+        <a href="идеальный-вес-дети-и-подростки.html">Идеальный Вес у Детей и Подростков</a>
+      </div>
+    </div>
+  </div>
+</section>
+</article>
+  </body>
+</html>

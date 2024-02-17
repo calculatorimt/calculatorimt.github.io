@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Рассчитать ИМТ у ребенка или подростка - CalculatorIMТ</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="css/imc.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/sendform.js" defer></script>
+  </head>
+  <body>
+ <header>
+  CalculatorIMТ
+</header>
+<article class="calculator w3-container w3-content" style="max-width: 900px">
+  <section class="name w3-panel">
+    Рассчитать ИМТ у ребенка или подростка
+    </section>
+  <form id="calculator" class="w3-container w3-card w3-text-black w3-margin" action="https://calculator-imt.com/cgi/bmi_kids.pl" method="GET" target="Popup" name="calculator" onsubmit="sendForm('800','800','calculator',''); return false;">
+
+  <section class="inputSection w3-panel">
+    <label>Ваш рост (см):</label>
+    <div class="inputAround"><input class="input w3-mobile" id="height" name="height" type="text" placeholder="cm"></div>
+  </section>
+  <section class="inputSection w3-panel">
+    <label>Ваш вес (кг):</label>
+    <div class="inputAround"><input class="input w3-mobile" id="weight" name="weight" type="text" placeholder="KG"></div>
+  </section>
+  <section class="inputSection w3-panel">
+    <label for="age">Ваш возраст (лет):</label>
+    <div class="inputAround">
+      <select class="w3-mobile select" aria-label="Age" size="1" name="age">
+        <option value="1">До 8 Лет</option>
+        <option value="8" selected>8 Лет</option>
+        <option value="9">9 Лет</option>
+        <option value="10">10 Лет</option>
+        <option value="11">11 Лет</option>
+        <option value="12">12 Лет</option>
+        <option value="13">13 Лет</option>
+        <option value="14">14 Лет</option>
+        <option value="15">15 Лет</option>
+        <option value="16">16 Лет</option>
+        <option value="17">17 Лет</option>
+        <option value="18">18 Лет</option>
+        </select></div>
+    </section>
+    <section class="inputSection w3-panel">
+  <input class="w3-radio" type="radio" name="gender" value="boy" checked>
+  <label>Мальчик</label>
+  
+  <input class="w3-radio" type="radio" name="gender" value="girl">
+  <label>Девочка</label>
+      </section>
+   <section class="buttonSection w3-panel">
+ <button class="w3-btn w3-dark-grey w3-round"  type="submit"> Рассчитать ИМТ</button></form>
+  </section>
+</article>
+<article class="about w3-content w3-panel" style="max-width: 900px">
+  <h4>Что такое ИМТ у детей и подростков?</h4>
+<div class="text">
+  <p>Индекс массы тела (ИМТ) также является показателем, используемым для оценки массы тела у детей и подростков, но интерпретируется иначе, чем у взрослых, поскольку масса тела варьируется в зависимости от возраста и пола в этих развивающихся возрастных группах. Вместо использования тех же категорий ИМТ, что и для взрослых, для детей и подростков используются процентили роста.</p>
+ </div>
+</article>
+<article class="calculators w3-panel w3-content" style="max-width: 900px;">
+<section class="name">
+  Другие калькуляторы
+</section>
+<section class="w3-container">
+  <div class="w3-panel w3-half">
+    <div class="w3-card">
+      <a href="имт.html"><img src="img/имт.webp" alt="" width="100%"></a>
+      <div class="text">
+      <a href="imт.html">Рассчитать ИМТ</a>
+      </div>
+    </div>
+  </div>
+  <div class="w3-panel w3-half">
+    <div class="w3-card">
+      <a href="расход-калорий.html"><img src="img/расход-калорий.webp" alt="" width="100%"></a>
+      <div class="text">
+      <a href="расход-калорий.html">Рассчитать Расход Калорий</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="w3-container">
+  <div class="w3-panel w3-half">
+    <div class="w3-card">
+      <a href="идеальный-вес.html"><img src="img/идеальный-вес.jpg.webp" alt="" width="100%"></a>
+      <div class="text">
+        <a href="идеальный-вес.html">Рассчитать Идеальный Вес</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="w3-container">
+  <div class="w3-panel w3-half">
+    <div class="w3-card">
+      <a href="бсм.html"><img src="img/бсм.jpg.webp" alt="" width="100%"></a>
+      <div class="text">
+        <a href="бсм.html">Базальная Скорость Метаболизма</a>
+      </div>
+    </div>
+  </div>
+  <div class="w3-panel w3-half">
+    <div class="w3-card">
+      <a href="идеальный-вес-дети-и-подростки.html"><img src="img/идеальный-вес-дети-и-подростки.webp" alt="" width="100%"></a>
+      <div class="text">
+        <a href="идеальный-вес-дети-и-подростки.html">Идеальный Вес у Детей и Подростков</a>
+      </div>
+    </div>
+  </div>
+</section>
+</article>
+  </body>
+</html>
